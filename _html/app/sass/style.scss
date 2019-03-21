@@ -1,0 +1,77 @@
+@charset 'utf-8';
+/*
+ * Table of contents   Содержание
+ *
+ *  0. General Vars, Mixins, Extends
+ *  1. Header
+ *  2. Menu main
+ *  3. Slider
+ *  4. edges
+ *  5. categories
+ *  6. actions
+ *  7. products
+ *  8. news
+ *  9. about
+ *  10. subscribe
+ *  11. social-links
+ *  12. footer
+ *  14. category-text
+ *  14. filter
+ *  15. toolbar
+ *  16. pagination
+ *  A. JS. 
+ *  B. Plugins
+ *
+ */
+
+@import 'mwgrid';
+@import 'fonts'; //
+@import 'svgfontstyle'; //
+@import 'base'; //
+@import 'media'; //
+@import 'libs'; //
+@import 'hamburgers/hamburgers'; //
+/* 0. General Vars, Mixins, Extends
+ *
+ *
+*/
+
+.collapse {
+    padding-left: 0; // padding-right: 0;
+    & > .row {
+        margin-left: 0;
+        margin-right: 0;
+        & > [class*="mv"] {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+[class*=row].collapse {
+    margin-left: 0;
+    margin-right: 0;
+    & > [class*="mv"] {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.g-title {
+    @include v_rhytm('item', $l_h);
+    line-height: $l_h;
+    color: $grey;
+}
+
+.section {
+    // margin-top: 2*$l_h;
+}
+
+
+
+/* 1. Header
+ * **********************************************************************
+ *
+*/
+
+.header {}
