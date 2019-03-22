@@ -12,13 +12,14 @@
 */
 
 html{
-    font-size : 14px;
+    font-size: 14px;
     height: 100%;
 }
 body{
-    font-size : inherit;
+    background-color: $light_alt;
+    font-size: inherit;
     // line-height : $l_h;
-    font-family : $font_family;
+    font-family: $font_family;
     height: 100%;   
     margin: 0;
     font-weight: 300;
@@ -64,7 +65,7 @@ h4, .h4{
 
 p{
     margin-top: 0;
-    margin-bottom: 1em;
+    margin-bottom: $l_h;
     font-size: $fb;
     line-height: $l_h;
     font-weight: 300;
@@ -87,5 +88,7 @@ img{
 
 
 .section-component {
-    margin: 2 * $l_h 0;
+    // margin: 2 * $l_h 0;
+    margin-top: 2px;
+    padding: 2em 0;
 }

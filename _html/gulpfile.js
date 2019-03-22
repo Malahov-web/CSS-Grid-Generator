@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 
     plumber = require('gulp-plumber'),  // Преодхраняет остановку задачи из-за ошибки
     
-    autoprefixer = require('gulp-autoprefixer'),
+    autoprefixer = require('gulp-autoprefixer');
     
     // csslint = require('gulp-csslint');
 
